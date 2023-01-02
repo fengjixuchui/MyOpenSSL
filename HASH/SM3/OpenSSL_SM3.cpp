@@ -1,6 +1,7 @@
 #include<iostream>
 #include<Windows.h>
 #include<openssl/evp.h>
+
 int sm3_hash(const unsigned char *message, size_t len, unsigned char *hash, unsigned int *hash_len)
 {
 	EVP_MD_CTX *md_ctx;
